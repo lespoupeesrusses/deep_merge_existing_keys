@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    deep_merge_existing_keys (0.1.0)
+    deep_merge_existing_keys (1.0.0)
       rails (>= 5.2)
 
 GEM
