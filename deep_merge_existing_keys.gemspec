@@ -1,5 +1,4 @@
-lib = File.expand_path("../lib", __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+$:.push File.expand_path('../lib', __FILE__)
 require "deep_merge_existing_keys/version"
 
 Gem::Specification.new do |spec|
@@ -12,8 +11,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/lespoupeesrusses/deep_merge_existing_keys"
   spec.license       = "MIT"
 
-  spec.files         = File.expand_path('..', __FILE__)
-  spec.require_paths = ["lib"]
+  spec.files = Dir['{lib,spec}/**/*', '.rspec', 'LICENSE', 'Rakefile', 'README.md']
 
   spec.add_dependency 'rails', '>= 5.2'
 
