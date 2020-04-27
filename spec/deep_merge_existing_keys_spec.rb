@@ -3,7 +3,7 @@ RSpec.describe DeepMergeExistingKeys do
     expect(DeepMergeExistingKeys::VERSION).not_to be nil
   end
 
-  it "does its job" do
+  it "does its basic job" do
     old_hash = {
       a: 10,
       b: 20,
